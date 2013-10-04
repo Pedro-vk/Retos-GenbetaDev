@@ -1,0 +1,11 @@
+<body><pre></pre></body>
+
+<script>
+	addEventListener('load',function(){
+		for(var i=0;i<30;i++){
+			var	n = String(Math.pow(i,3));
+			for(var r=0,c=0;c<n.length;c++)	r += Number(n.charAt(c));
+			if(i==r) document.body.firstChild.innerHTML += (n+'	('+r+')\n');
+		}
+	},false);
+</script>
